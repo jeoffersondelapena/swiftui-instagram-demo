@@ -18,7 +18,7 @@ struct HomeScreen: View {
     
     var body: some View {
         List(viewModel.posts) { post in
-            Text(post.caption)
+            PostItem(post: post)
         }
         .navigationTitle("Swiftagram")
         .onAppear {

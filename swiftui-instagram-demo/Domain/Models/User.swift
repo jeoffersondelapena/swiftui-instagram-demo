@@ -7,8 +7,14 @@
 
 import Foundation
 
-class User: Codable {
+struct User: Codable {
     var id: String
     var username: String
     var photo: String
+    
+    static let sample = User(
+        id: "abc",
+        username: "juandelacruz",
+        photo: "http://placekitten.com/200/300"
+    )
 }

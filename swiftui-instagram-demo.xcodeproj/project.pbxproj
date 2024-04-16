@@ -14,6 +14,7 @@
 		403ED02B2BCE2ACD007488E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403ED02A2BCE2ACD007488E2 /* GoogleService-Info.plist */; };
 		4049F9882BCEEA0B005205B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049F9872BCEEA0B005205B5 /* User.swift */; };
 		4049F98A2BCEF198005205B5 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049F9892BCEF198005205B5 /* Comment.swift */; };
+		4049F98C2BCF0C9C005205B5 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049F98B2BCF0C9C005205B5 /* PostItem.swift */; };
 		408B05232BCE367100A1B494 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B05222BCE367100A1B494 /* Post.swift */; };
 		408B05282BCE386F00A1B494 /* HomeRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B05272BCE386F00A1B494 /* HomeRemoteService.swift */; };
 		408B052D2BCE3A0600A1B494 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B052C2BCE3A0600A1B494 /* HomeRepository.swift */; };
@@ -33,6 +34,7 @@
 		403ED02A2BCE2ACD007488E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4049F9872BCEEA0B005205B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4049F9892BCEF198005205B5 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		4049F98B2BCF0C9C005205B5 /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
 		408B05222BCE367100A1B494 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		408B05272BCE386F00A1B494 /* HomeRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteService.swift; sourceTree = "<group>"; };
 		408B052C2BCE3A0600A1B494 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			children = (
 				408B05332BCE44CF00A1B494 /* HomeViewModel.swift */,
 				408B05312BCE3CE300A1B494 /* HomeScreen.swift */,
+				4049F98B2BCF0C9C005205B5 /* PostItem.swift */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4049F98C2BCF0C9C005205B5 /* PostItem.swift in Sources */,
 				408B052D2BCE3A0600A1B494 /* HomeRepository.swift in Sources */,
 				408B05232BCE367100A1B494 /* Post.swift in Sources */,
 				408B05322BCE3CE300A1B494 /* HomeScreen.swift in Sources */,
