@@ -9,9 +9,15 @@ import Foundation
 
 struct Post: Codable {
     var id: String
-    var contentText: String
+    var author: User
+    var photo: String
+    var caption: String
+    var dateCreated: String
+    var numLikes: String
+    var didLike: Bool
+    var comments: [Comment]
 }
 
-struct PostsWrapper: Codable {
+struct SampleData: Codable {
     var posts: [Post]
 }

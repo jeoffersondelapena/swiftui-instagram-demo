@@ -12,14 +12,15 @@
 		403851202BCE26E200EBEDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4038511F2BCE26E200EBEDCF /* Assets.xcassets */; };
 		403851232BCE26E200EBEDCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403851222BCE26E200EBEDCF /* Preview Assets.xcassets */; };
 		403ED02B2BCE2ACD007488E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403ED02A2BCE2ACD007488E2 /* GoogleService-Info.plist */; };
+		4049F9882BCEEA0B005205B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049F9872BCEEA0B005205B5 /* User.swift */; };
+		4049F98A2BCEF198005205B5 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049F9892BCEF198005205B5 /* Comment.swift */; };
 		408B05232BCE367100A1B494 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B05222BCE367100A1B494 /* Post.swift */; };
 		408B05282BCE386F00A1B494 /* HomeRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B05272BCE386F00A1B494 /* HomeRemoteService.swift */; };
 		408B052D2BCE3A0600A1B494 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B052C2BCE3A0600A1B494 /* HomeRepository.swift */; };
 		408B052F2BCE3A5900A1B494 /* HomeRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B052E2BCE3A5900A1B494 /* HomeRepositoryImpl.swift */; };
 		408B05322BCE3CE300A1B494 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B05312BCE3CE300A1B494 /* HomeScreen.swift */; };
 		408B05342BCE44CF00A1B494 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B05332BCE44CF00A1B494 /* HomeViewModel.swift */; };
-		408B05392BCE576400A1B494 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 408B05372BCE576300A1B494 /* users.json */; };
-		408B053A2BCE576400A1B494 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 408B05382BCE576400A1B494 /* posts.json */; };
+		408B053A2BCE576400A1B494 /* sample_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 408B05382BCE576400A1B494 /* sample_data.json */; };
 		B0F9D83BBDE8F95061825F8A /* Pods_swiftui_instagram_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636847AEC41D5CB3F8F740A9 /* Pods_swiftui_instagram_demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,14 +31,15 @@
 		4038511F2BCE26E200EBEDCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		403851222BCE26E200EBEDCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		403ED02A2BCE2ACD007488E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4049F9872BCEEA0B005205B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4049F9892BCEF198005205B5 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		408B05222BCE367100A1B494 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		408B05272BCE386F00A1B494 /* HomeRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteService.swift; sourceTree = "<group>"; };
 		408B052C2BCE3A0600A1B494 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 		408B052E2BCE3A5900A1B494 /* HomeRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryImpl.swift; sourceTree = "<group>"; };
 		408B05312BCE3CE300A1B494 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		408B05332BCE44CF00A1B494 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		408B05372BCE576300A1B494 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
-		408B05382BCE576400A1B494 /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		408B05382BCE576400A1B494 /* sample_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_data.json; sourceTree = "<group>"; };
 		44C4251FC03D35A5C9A8E3C5 /* Pods-swiftui-instagram-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-instagram-demo.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-instagram-demo/Pods-swiftui-instagram-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		636847AEC41D5CB3F8F740A9 /* Pods_swiftui_instagram_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_instagram_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7F0310EF7265FD7C81B4BB /* Pods-swiftui-instagram-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-instagram-demo.release.xcconfig"; path = "Target Support Files/Pods-swiftui-instagram-demo/Pods-swiftui-instagram-demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				408B05222BCE367100A1B494 /* Post.swift */,
+				4049F9872BCEEA0B005205B5 /* User.swift */,
+				4049F9892BCEF198005205B5 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,8 +161,7 @@
 		408B05242BCE37FD00A1B494 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				408B05382BCE576400A1B494 /* posts.json */,
-				408B05372BCE576300A1B494 /* users.json */,
+				408B05382BCE576400A1B494 /* sample_data.json */,
 				408B05262BCE385900A1B494 /* Services */,
 			);
 			path = Remote;
@@ -274,8 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				408B05392BCE576400A1B494 /* users.json in Resources */,
-				408B053A2BCE576400A1B494 /* posts.json in Resources */,
+				408B053A2BCE576400A1B494 /* sample_data.json in Resources */,
 				403851232BCE26E200EBEDCF /* Preview Assets.xcassets in Resources */,
 				403851202BCE26E200EBEDCF /* Assets.xcassets in Resources */,
 				403ED02B2BCE2ACD007488E2 /* GoogleService-Info.plist in Resources */,
@@ -336,6 +338,8 @@
 				408B05322BCE3CE300A1B494 /* HomeScreen.swift in Sources */,
 				408B05342BCE44CF00A1B494 /* HomeViewModel.swift in Sources */,
 				408B052F2BCE3A5900A1B494 /* HomeRepositoryImpl.swift in Sources */,
+				4049F98A2BCEF198005205B5 /* Comment.swift in Sources */,
+				4049F9882BCEEA0B005205B5 /* User.swift in Sources */,
 				408B05282BCE386F00A1B494 /* HomeRemoteService.swift in Sources */,
 				4038511E2BCE26E200EBEDCF /* ContentView.swift in Sources */,
 				4038511C2BCE26E200EBEDCF /* swiftui_instagram_demoApp.swift in Sources */,

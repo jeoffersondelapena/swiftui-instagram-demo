@@ -28,11 +28,11 @@ class HomeRemoteService {
     }
     
     private func getPostsFromJson() -> [Post]? {
-        guard let url = Bundle.main.url(forResource: "posts", withExtension: "json") else {
+        guard let url = Bundle.main.url(forResource: "sample_data", withExtension: "json") else {
             return nil
         }
         do {
-            return (try JSONDecoder().decode(PostsWrapper.self, from: try Data(contentsOf: url))).posts
+            return (try JSONDecoder().decode(SampleData.self, from: try Data(contentsOf: url))).posts
         } catch {
             print("Error getting posts from json: \(error)")
             return nil
