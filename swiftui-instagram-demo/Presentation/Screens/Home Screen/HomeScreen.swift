@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    static let shouldGeneratePosts = true
+    static let shouldGeneratePosts = false
     
     @StateObject private var viewModel = HomeViewModel(
         repository: HomeRepositoryImpl(
