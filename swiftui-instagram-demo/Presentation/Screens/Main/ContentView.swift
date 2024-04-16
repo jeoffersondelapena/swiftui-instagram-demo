@@ -6,35 +6,59 @@
 //
 
 import SwiftUI
-import FirebaseFirestore
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-        .onAppear {
-            Task {
-                await generateData()
+        TabView {
+            NavigationStack {
+                HomeScreen()
             }
-        }
-    }
-    
-    private func generateData() async {
-        let db = Firestore.firestore()
-        do {
-          try await db.collection("posts").document("post-0").setData([
-            "name": "Los Angeles",
-            "state": "CA",
-            "country": "USA"
-          ])
-          print("Document successfully written!")
-        } catch {
-          print("Error writing document: \(error)")
+            .tabItem {
+                Label(
+                    "Home",
+                    systemImage: "house.fill"
+                )
+            }
+            
+            NavigationStack {
+                Text("Search")
+            }
+            .tabItem {
+                Label(
+                    "Search",
+                    systemImage: "magnifyingglass"
+                )
+            }
+            
+            NavigationStack {
+                Text("Create")
+            }
+            .tabItem {
+                Label(
+                    "Create",
+                    systemImage: "plus.app"
+                )
+            }
+            
+            NavigationStack {
+                Text("Reels")
+            }
+            .tabItem {
+                Label(
+                    "Reels",
+                    systemImage: "play.square.stack.fill"
+                )
+            }
+            
+            NavigationStack {
+                Text("Profile")
+            }
+            .tabItem {
+                Label(
+                    "Profile",
+                    systemImage: "person.crop.circle"
+                )
+            }
         }
     }
 }

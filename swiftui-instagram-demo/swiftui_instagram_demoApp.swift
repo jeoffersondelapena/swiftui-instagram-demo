@@ -23,6 +23,7 @@ struct swiftui_instagram_demoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.dark)
         }
     }
 }
