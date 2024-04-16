@@ -8,5 +8,6 @@
 import Foundation
 
 protocol HomeRepository {
+    func getPosts() async -> [Post]
     func generatePosts()
 }

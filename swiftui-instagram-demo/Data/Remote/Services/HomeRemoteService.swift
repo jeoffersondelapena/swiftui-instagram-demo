@@ -9,16 +9,28 @@ import Foundation
 import FirebaseFirestore
 
 class HomeRemoteService {
-    private var db: Firestore = {
-        return Firestore.firestore()
-    }()
+    lazy var db = Firestore.firestore()
+    
+    lazy var postsCollection = db.collection("posts")
+    
+    func getPosts() async -> [Post] {
+        do {
+            var posts: [Post] = []
+            for document in (try await postsCollection.getDocuments()).documents {
+                posts.append(try document.data(as: Post.self))
+            }
+            return posts
+        } catch {
+            print("Error getting documents: \(error)")
+            return []
+        }
+    }
     
     func generatePosts() {
         guard let posts = getPostsFromJson() else {
             return
         }
         do {
-            let postsCollection = db.collection("posts")
             try posts.forEach { post in
                 try postsCollection.document(post.id).setData(from: post)
             }

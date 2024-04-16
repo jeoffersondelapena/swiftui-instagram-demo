@@ -14,6 +14,10 @@ class HomeRepositoryImpl: HomeRepository {
         self.remoteService = remoteService
     }
     
+    func getPosts() async -> [Post] {
+        await remoteService.getPosts()
+    }
+    
     func generatePosts() {
         remoteService.generatePosts()
     }

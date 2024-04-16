@@ -17,14 +17,19 @@ struct HomeScreen: View {
     )
     
     var body: some View {
-        Text("Home")
-            .navigationTitle("Swiftagram")
-            .onAppear {
-                guard HomeScreen.shouldGeneratePosts else {
-                    return
-                }
-                viewModel.generatePosts()
+        List(viewModel.posts) { post in
+            Text(post.caption)
+        }
+        .navigationTitle("Swiftagram")
+        .onAppear {
+            Task {
+                await viewModel.getPosts()
             }
+            guard HomeScreen.shouldGeneratePosts else {
+                return
+            }
+            viewModel.generatePosts()
+        }
     }
 }
 

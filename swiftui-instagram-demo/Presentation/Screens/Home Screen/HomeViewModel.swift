@@ -16,6 +16,13 @@ class HomeViewModel: ObservableObject {
         self.repository = repository
     }
     
+    func getPosts() async {
+        let posts = await repository.getPosts()
+        await MainActor.run {
+            self.posts = posts
+        }
+    }
+    
     func generatePosts() {
         repository.generatePosts()
     }
