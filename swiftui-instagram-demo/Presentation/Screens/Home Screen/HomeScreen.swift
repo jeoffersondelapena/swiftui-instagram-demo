@@ -18,6 +18,7 @@ struct HomeScreen: View {
         List(viewModel.posts) { post in
             PostItem(post: post)
         }
+        .listStyle(.plain)
         .navigationTitle("Swiftagram")
         .onAppear {
             Task {
@@ -28,5 +29,16 @@ struct HomeScreen: View {
 }
 
 #Preview {
-    HomeScreen()
+    TabView {
+        NavigationStack {
+            HomeScreen()
+        }
+        .tabItem {
+            Label(
+                "Home",
+                systemImage: "house.fill"
+            )
+        }
+    }
+    .preferredColorScheme(.dark)
 }

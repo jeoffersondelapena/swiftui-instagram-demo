@@ -12,6 +12,7 @@
             "dateCreated": "April 15, 2024 at 9:00 PM",
             "numLikes": "10,356,782",
             "didLike": true,
+            "didBookmark": true,
             "comments": [
                 {
                     "id": "comment-01-a",
@@ -63,6 +64,7 @@
             "dateCreated": "April 14, 2024 at 3:00 PM",
             "numLikes": "8,943,211",
             "didLike": false,
+            "didBookmark": false,
             "comments": [
                 {
                     "id": "comment-02-a",
@@ -114,6 +116,7 @@
             "dateCreated": "April 13, 2024 at 11:00 AM",
             "numLikes": "12,789,456",
             "didLike": true,
+            "didBookmark": true,
             "comments": [
                 {
                     "id": "comment-03-a",
@@ -165,6 +168,7 @@
             "dateCreated": "April 12, 2024 at 6:00 PM",
             "numLikes": "15,672,901",
             "didLike": false,
+            "didBookmark": false,
             "comments": [
                 {
                     "id": "comment-04-a",
@@ -216,6 +220,7 @@
             "dateCreated": "April 11, 2024 at 10:00 AM",
             "numLikes": "9,238,657",
             "didLike": true,
+            "didBookmark": true,
             "comments": [
                 {
                     "id": "comment-05-a",
@@ -267,6 +272,7 @@
             "dateCreated": "April 10, 2024 at 5:00 PM",
             "numLikes": "18,547,301",
             "didLike": true,
+            "didBookmark": true,
             "comments": [
                 {
                     "id": "comment-06-a",
@@ -318,6 +324,7 @@
             "dateCreated": "April 9, 2024 at 11:00 PM",
             "numLikes": "14,082,567",
             "didLike": false,
+            "didBookmark": true,
             "comments": [
                 {
                     "id": "comment-07-a",
@@ -369,6 +376,7 @@
             "dateCreated": "April 8, 2024 at 2:00 PM",
             "numLikes": "11,943,802",
             "didLike": true,
+            "didBookmark": true,
             "comments": [
                 {
                     "id": "comment-08-a",
@@ -420,6 +428,7 @@
             "dateCreated": "April 7, 2024 at 8:00 AM",
             "numLikes": "16,289,005",
             "didLike": false,
+            "didBookmark": true,
             "comments": [
                 {
                     "id": "comment-09-a",
@@ -471,6 +480,7 @@
             "dateCreated": "April 6, 2024 at 4:00 PM",
             "numLikes": "13,508,239",
             "didLike": true,
+            "didBookmark": true,
             "comments": [
                 {
                     "id": "comment-10-a",

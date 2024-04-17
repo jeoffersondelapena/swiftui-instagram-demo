@@ -14,4 +14,13 @@ struct Comment: Codable {
     var dateCreated: String
     var numLikes: String
     var didLike: Bool
+    
+    static let sample = Comment(
+        id: "comment-01-a",
+        author: User.sample,
+        content: "Incredible goal, Cristiano! You never cease to amaze us on the field. 🙌",
+        dateCreated: "April 15, 2024 at 9:15 PM",
+        numLikes: "1.2M",
+        didLike: false
+    )
 }

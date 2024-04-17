@@ -10,5 +10,7 @@ target 'swiftui-instagram-demo' do
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'FirebaseStorage'
+  
+  pod 'Kingfisher', '~> 7.0'
 
 end

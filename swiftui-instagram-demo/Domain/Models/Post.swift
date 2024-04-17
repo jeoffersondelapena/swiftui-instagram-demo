@@ -15,17 +15,25 @@ struct Post: Codable, Identifiable {
     var dateCreated: String
     var numLikes: String
     var didLike: Bool
+    var didBookmark: Bool
     var comments: [Comment]
     
+    var photoURL: URL? {
+        URL(string: photo)
+    }
+    
     static let sample = Post(
-        id: "abc",
+        id: "post-01",
         author: User.sample,
-        photo: "http://placekitten.com/200/300",
-        caption: "Some caption...",
+        photo: "https://firebasestorage.googleapis.com/v0/b/swiftui-instagram-demo.appspot.com/o/posts%2Fpost01a.jpeg?alt=media&token=c2a9c713-5887-417f-ba63-56acd23a207e",
+        caption: "Just scored an amazing goal in today's match! ⚽️🔥 Feeling unstoppable!",
         dateCreated: "April 15, 2024 at 9:00 PM",
-        numLikes: "3",
-        didLike: false,
-        comments: []
+        numLikes: "10,356,782",
+        didLike: true,
+        didBookmark: true,
+        comments: [
+            Comment.sample
+        ]
     )
 }
 

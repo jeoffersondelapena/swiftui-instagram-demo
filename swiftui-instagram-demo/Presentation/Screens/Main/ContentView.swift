@@ -16,7 +16,7 @@ struct ContentView: View {
             .tabItem {
                 Label(
                     "Home",
-                    systemImage: "house.fill"
+                    systemImage: "house"
                 )
             }
             
@@ -46,7 +46,7 @@ struct ContentView: View {
             .tabItem {
                 Label(
                     "Reels",
-                    systemImage: "play.square.stack.fill"
+                    systemImage: "play.square.stack"
                 )
             }
             
@@ -65,4 +65,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .preferredColorScheme(.dark)
 }
