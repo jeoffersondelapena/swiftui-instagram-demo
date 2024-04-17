@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PostItem: View {
+    @State private var isShowingCommentsSheet = false
+    
     let post: Post
     
     var body: some View {
@@ -36,7 +38,9 @@ struct PostItem: View {
                     }
                     
                     AppIcon(systemName: "bubble.right")
-                
+                        .onTapGesture {
+                            isShowingCommentsSheet = true
+                        }
                 
                     AppIcon(systemName: "paperplane")
                     
@@ -53,6 +57,9 @@ struct PostItem: View {
                 if !post.comments.isEmpty {
                     AppText("View all comments")
                         .foregroundColor(.gray)
+                        .onTapGesture {
+                            isShowingCommentsSheet = true
+                        }
                 }
                 
                 if let highlightedComment = post.comments.first {
@@ -66,13 +73,22 @@ struct PostItem: View {
                             AppIcon(systemName: "heart", size: 12)
                         }
                     }
+                    .onTapGesture {
+                        isShowingCommentsSheet = true
+                    }
                 }
                 
                 AppText(post.dateCreated, font: .caption)
+                    .foregroundColor(.gray)
             }
             .padding(.horizontal, 8)
         }
         .padding(.vertical)
+        .sheet(isPresented: $isShowingCommentsSheet) {
+            CommentsSheet(comments: post.comments)
+                .presentationDetents([.medium])
+                .presentationDragIndicator(.visible)
+        }
     }
 }
 

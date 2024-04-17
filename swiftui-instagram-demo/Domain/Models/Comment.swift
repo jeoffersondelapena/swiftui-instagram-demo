@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Comment: Codable {
+struct Comment: Codable, Identifiable {
     var id: String
     var author: User
     var content: String
@@ -23,4 +23,8 @@ struct Comment: Codable {
         numLikes: "1.2M",
         didLike: false
     )
+    
+    static let samples = [
+        Comment.sample
+    ]
 }

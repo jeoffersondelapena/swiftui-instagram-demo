@@ -31,12 +31,6 @@ struct Post: Codable, Identifiable {
         numLikes: "10,356,782",
         didLike: true,
         didBookmark: true,
-        comments: [
-            Comment.sample
-        ]
+        comments: Comment.samples
     )
-}
-
-struct SampleData: Codable {
-    var posts: [Post]
 }
