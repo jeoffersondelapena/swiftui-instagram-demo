@@ -15,6 +15,7 @@
 		4049F9882BCEEA0B005205B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049F9872BCEEA0B005205B5 /* User.swift */; };
 		4049F98A2BCEF198005205B5 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049F9892BCEF198005205B5 /* Comment.swift */; };
 		4049F98C2BCF0C9C005205B5 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049F98B2BCF0C9C005205B5 /* PostItem.swift */; };
+		406251462BCF988C006238AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406251452BCF988C006238AF /* Constants.swift */; };
 		408B05232BCE367100A1B494 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B05222BCE367100A1B494 /* Post.swift */; };
 		408B05282BCE386F00A1B494 /* HomeRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B05272BCE386F00A1B494 /* HomeRemoteService.swift */; };
 		408B052D2BCE3A0600A1B494 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B052C2BCE3A0600A1B494 /* HomeRepository.swift */; };
@@ -35,6 +36,7 @@
 		4049F9872BCEEA0B005205B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4049F9892BCEF198005205B5 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		4049F98B2BCF0C9C005205B5 /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
+		406251452BCF988C006238AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		408B05222BCE367100A1B494 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		408B05272BCE386F00A1B494 /* HomeRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteService.swift; sourceTree = "<group>"; };
 		408B052C2BCE3A0600A1B494 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		406251442BCF9878006238AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				406251452BCF988C006238AF /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		408B051B2BCE32FA00A1B494 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 			children = (
 				408B05212BCE365E00A1B494 /* Models */,
 				408B052B2BCE399400A1B494 /* Repositories */,
+				406251442BCF9878006238AF /* Utilities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -347,6 +358,7 @@
 				408B05282BCE386F00A1B494 /* HomeRemoteService.swift in Sources */,
 				4038511E2BCE26E200EBEDCF /* ContentView.swift in Sources */,
 				4038511C2BCE26E200EBEDCF /* swiftui_instagram_demoApp.swift in Sources */,
+				406251462BCF988C006238AF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

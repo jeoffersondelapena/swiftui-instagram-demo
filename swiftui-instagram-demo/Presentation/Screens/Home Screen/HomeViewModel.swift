@@ -14,6 +14,9 @@ class HomeViewModel: ObservableObject {
     
     init(repository: HomeRepository) {
         self.repository = repository
+        if Constants.shouldGeneratePosts {
+            generatePosts()
+        }
     }
     
     func getPosts() async {

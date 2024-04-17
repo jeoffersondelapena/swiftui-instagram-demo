@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    static let shouldGeneratePosts = false
-    
     @StateObject private var viewModel = HomeViewModel(
         repository: HomeRepositoryImpl(
             remoteService: HomeRemoteService()
@@ -25,10 +23,6 @@ struct HomeScreen: View {
             Task {
                 await viewModel.getPosts()
             }
-            guard HomeScreen.shouldGeneratePosts else {
-                return
-            }
-            viewModel.generatePosts()
         }
     }
 }
