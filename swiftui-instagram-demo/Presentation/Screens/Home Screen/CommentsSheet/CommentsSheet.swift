@@ -22,7 +22,6 @@ struct CommentsSheet: View {
                     CommentItem(comment: comment)
                 }
                 .listStyle(.plain)
-                .scrollDisabled(true)
             }
         }
         .padding()
