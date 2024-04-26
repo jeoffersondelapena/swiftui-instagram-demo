@@ -24,7 +24,7 @@ struct Post: Codable, Identifiable {
     
     static let sample = Post(
         id: "post-01",
-        author: User.sample,
+        author: User.sample1,
         photo: "https://firebasestorage.googleapis.com/v0/b/swiftui-instagram-demo.appspot.com/o/posts%2Fpost01a.jpeg?alt=media&token=c2a9c713-5887-417f-ba63-56acd23a207e",
         caption: "Just scored an amazing goal in today's match! ⚽️🔥 Feeling unstoppable!",
         dateCreated: "April 15, 2024 at 9:00 PM",

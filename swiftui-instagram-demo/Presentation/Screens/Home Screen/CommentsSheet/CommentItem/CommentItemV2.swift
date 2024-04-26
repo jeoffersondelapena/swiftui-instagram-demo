@@ -1,5 +1,5 @@
 //
-//  CommentItem.swift
+//  CommentItemV2.swift
 //  swiftui-instagram-demo
 //
 //  Created by Jeofferson Dela Peña on 4/17/24.
@@ -7,32 +7,26 @@
 
 import SwiftUI
 
-struct CommentItem: View {
+struct CommentItemV2: View {
     let comment: Comment
+    
     var body: some View {
         HStack {
-            if let photoURL = comment.author.photoURL {
-                CircleAvatar(url: photoURL)
-            }
-            
+            CircleAvatar(comment.author.photoURL)
             VStack {
                 AppText(comment.author.username)
                     .bold()
-                
                 AppText(comment.content)
-                
                 AppText(comment.dateCreated, font: .caption)
                     .foregroundColor(.gray)
             }
-            
             VStack {
                 if comment.didLike {
-                    AppIcon(systemName: "heart.fill", size: 12)
+                    AppIcon("heart.fill", size: 12)
                         .foregroundColor(.red)
                 } else {
-                    AppIcon(systemName: "heart", size: 12)
+                    AppIcon("heart", size: 12)
                 }
-                
                 Text(comment.numLikes)
                     .font(.caption)
             }
@@ -42,6 +36,6 @@ struct CommentItem: View {
 }
 
 #Preview {
-    CommentItem(comment: Comment.sample)
+    CommentItemV2(comment: Comment.sample)
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }

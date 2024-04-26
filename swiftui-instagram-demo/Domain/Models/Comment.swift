@@ -17,7 +17,7 @@ struct Comment: Codable, Identifiable {
     
     static let sample = Comment(
         id: "comment-01-a",
-        author: User.sample,
+        author: User.sample2,
         content: "Incredible goal, Cristiano! You never cease to amaze us on the field. 🙌",
         dateCreated: "April 15, 2024 at 9:15 PM",
         numLikes: "1.2M",

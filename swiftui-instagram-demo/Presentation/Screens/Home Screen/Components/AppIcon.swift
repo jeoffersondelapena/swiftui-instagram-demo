@@ -11,7 +11,7 @@ struct AppIcon: View {
     private let systemName: String
     private let size: CGFloat
     
-    init(systemName: String, size: CGFloat = 20) {
+    init(_ systemName: String, size: CGFloat = 20) {
         self.systemName = systemName
         self.size = size
     }
@@ -24,5 +24,5 @@ struct AppIcon: View {
 }
 
 #Preview {
-    AppIcon(systemName: "house")
+    AppIcon("house")
 }

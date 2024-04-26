@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct CircleAvatar: View {
-    let url: URL
+    let url: URL?
+    
+    init(_ url: URL?) {
+        self.url = url
+    }
     
     var body: some View {
-        CachedNetworkImage(url: url)
+        CachedNetworkImage(url)
             .clipShape(Circle())
             .frame(width: 24, height: 24)
     }
 }
 
 #Preview {
-    CircleAvatar(url: User.sample.photoURL!)
+    CircleAvatar(User.sample1.photoURL!)
 }

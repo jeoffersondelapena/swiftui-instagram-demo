@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CommentsSheet: View {
     let comments: [Comment]
+    
     var body: some View {
         ScrollView {
             LazyVStack {

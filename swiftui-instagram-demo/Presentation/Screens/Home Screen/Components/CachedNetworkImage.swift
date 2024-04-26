@@ -9,7 +9,11 @@ import SwiftUI
 import Kingfisher
 
 struct CachedNetworkImage: View {
-    let url: URL
+    let url: URL?
+    
+    init(_ url: URL?) {
+        self.url = url
+    }
     
     var body: some View {
         KFImage(url)
@@ -22,5 +26,5 @@ struct CachedNetworkImage: View {
 }
 
 #Preview {
-    CachedNetworkImage(url: Post.sample.photoURL!)
+    CachedNetworkImage(Post.sample.photoURL!)
 }
